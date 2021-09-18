@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.loginbox{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: rgb(15, 15, 15);
+    align-items: center;
+    justify-content: center;
+}
+
+.loginbox form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    width: 440px;
+    border-radius: 6px;
+    box-shadow: 2px 4px 4px 4px rgba(180,180,180,0.3);
+}
+
+.loginbox form input[type="email"],
+.loginbox form input[type="password"]{
+    width: 80%;
+    margin: 5px 5px;
+    padding: 13px 14px;
+    font-size: 15px;
+}
+
+.loginbox form input[type="email"]:focus,
+.loginbox form input[type="password"]:focus{
+    outline: none;
+}
+
+.loginbox form input[type="submit"]{
+    width: 50%;
+    margin: 5px 5px;
+    padding: 6px 28px;
+    font-size: 18px;
+    background: rgb(214, 152, 35);
+    border: 2px solid rgb(214, 152, 35);
+    cursor: pointer;
+    transition: ease;
+    color: white;
+}
+
+.loginbox form input[type="submit"]:hover{
+    background: orange;
+}
+
+.loginbox form a{
+    text-decoration: none;
+    text-align: center;
+    margin: 5px 5px;
+    width: 50%;
+    padding: 5px 15px;
+    border: 2px solid rgb(58, 212, 58);;
+    background: rgb(58, 212, 58);
+    color: white;
+    font-size: 18px;
+    transition: ease;
+}
+
+.loginbox form a:hover{
+    background: green;
+}
